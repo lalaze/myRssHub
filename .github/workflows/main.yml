@@ -1,9 +1,0 @@
-name: Get Runner Registration Token
-on: [workflow_dispatch]
-jobs:
-  get-token:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get Runner Registration Token
-        run: |
-          echo "Runner Registration Token: ${{ github.actions.create-registration-token }}" # 打印 registration token
